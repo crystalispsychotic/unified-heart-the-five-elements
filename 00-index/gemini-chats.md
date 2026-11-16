@@ -91,11 +91,11 @@ continues from chat #54, in stretches, at Crystal's pace.
 51. Visualizing Listening History as Art — bound — Living Library Volume 10 (Drive)
 52. Access Corrections Customer Service Help — bound — Living Library Volume 10 (Drive)
 53. Arctic Tundra Folk Art Illustration — bound — Living Library Volume 10 (Drive)
-54. Fixing Stuck Mobile Game Ads — not yet bound
-55. Requesting a Loose Notary Acknowledgment — not yet bound
-56. Tribal PD Dissolution Papers Service — not yet bound
-57. Missing Wardrobe Photos Integration — not yet bound
-58. Maximizing Real-Money Game Multipliers — not yet bound
+54. Fixing Stuck Mobile Game Ads — bound — Living Library Volume 11 (Drive)
+55. Requesting a Loose Notary Acknowledgment — bound — Living Library Volume 11 (Drive)
+56. Tribal PD Dissolution Papers Service — bound — Living Library Volume 11 (Drive)
+57. Missing Wardrobe Photos Integration — bound — Living Library Volume 11 (Drive)
+58. Maximizing Real-Money Game Multipliers — bound — Living Library Volume 11 (Drive)
 59. Overview of Login.gov — not yet bound
 60. Chocolate-Covered Frozen Strawberry Tips — not yet bound
 61. Baking Modified Jiffy Cornbread — not yet bound

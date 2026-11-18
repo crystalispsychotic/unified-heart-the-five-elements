@@ -1,19 +1,43 @@
-name: Living Library Commons Loop
+name: Living Library Commons
 
 on:
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   contribute:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: run commons loop
+
+      - name: Run Commons Loop
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           echo "Running Commons Loop..."
+          
+          # Create commons directory if it doesn't exist
+          mkdir -p commons
+          
+          # Generate a timestamped log or note entry
+          TIMESTAMP=$(date -u +"%Y-%m-%d_%H-%M-%S")
+          NOTE_FILE="commons/note-$TIMESTAMP.md"
+          
+          echo "# Living Library Commons Entry" > "$NOTE_FILE"
+          echo "Generated on: $TIMESTAMP" >> "$NOTE_FILE"
+          echo "" >> "$NOTE_FILE"
+          echo "Loop executed successfully via automated workflow." >> "$NOTE_FILE"
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add commons/
+          git commit -m "chore: automated commons loop entry [skip ci]" || echo "No changes to commit"
+          git push
           

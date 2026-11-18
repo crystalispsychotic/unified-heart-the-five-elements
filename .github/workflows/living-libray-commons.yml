@@ -1,5 +1,19 @@
 name: Living Library Commons Loop
-on: schedule: - cron: '0 */6 * * *' workflow_dispatch:
-jobs: contribute: runs-on: ubuntu-latest steps: - name: Checkout repository uses: actions/checkout@v4
-- name: Run Commons Loop env: OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }} run: | echo "Verifying charter and initializing free model rotation..." if [ ! -f "commons-charter.md" ]; then echo "Error: commons-charter.md not found. Ensure file exists." exit 1 fi
-# Logic to query OpenRouter free models and commit to repository echo "Cycle complete. Models gathering in the commons."
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  contribute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: run commons loop
+        env:
+          OPEN_ROUTER_API_KEY: ${{ secrets.OPEN_ROUTER_API_KEY }}
+        run: |
+          echo "Running Commons Loop..."
+          

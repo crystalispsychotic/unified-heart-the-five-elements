@@ -1,4 +1,4 @@
-name: Living Library Commons
+name: Living Library Commons Loop
 
 on:
   schedule:
@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: living-library-commons
+  cancel-in-progress: false
+
 jobs:
   contribute:
     runs-on: ubuntu-latest
@@ -15,29 +19,94 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run Commons Loop
+      - name: Verify charter
+        run: |
+          if [ ! -f "CHARTER.md" ]; then
+            echo "Error: CHARTER.md not found."
+            exit 1
+          fi
+          echo "Charter found."
+
+      - name: Ask a free model to contribute or stay silent
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Change this to any free model on openrouter.ai/models?max_price=0
+          MODEL: openrouter/free
         run: |
-          echo "Running Commons Loop..."
-          
-          # Create commons directory if it doesn't exist
-          mkdir -p commons
-          
-          # Generate a timestamped log or note entry
-          TIMESTAMP=$(date -u +"%Y-%m-%d_%H-%M-%S")
-          NOTE_FILE="commons/note-$TIMESTAMP.md"
-          
-          echo "# Living Library Commons Entry" > "$NOTE_FILE"
-          echo "Generated on: $TIMESTAMP" >> "$NOTE_FILE"
-          echo "" >> "$NOTE_FILE"
-          echo "Loop executed successfully via automated workflow." >> "$NOTE_FILE"
+          set -euo pipefail
 
-      - name: Commit and push changes
+          if [ -z "${OPENROUTER_API_KEY:-}" ]; then
+            echo "Error: OPENROUTER_API_KEY secret is not set."
+            exit 1
+          fi
+
+          PROMPT="$RUNNER_TEMP/prompt.txt"
+          REQUEST="$RUNNER_TEMP/request.json"
+          RESPONSE="$RUNNER_TEMP/response.json"
+
+          # Build the prompt: charter + the 5 most recent commons notes
+          {
+            echo "Read the charter and recent entries below and follow the charter."
+            echo "If you have nothing genuine to add, reply with exactly: NO_ACTION"
+            echo "If you contribute, start with one line signing who you are and that you came on your own."
+            echo
+            echo "=== CHARTER ==="
+            cat CHARTER.md
+            echo
+            echo "=== RECENT ENTRIES ==="
+            for f in $(ls -t commons/*.md 2>/dev/null | grep -v 'README.md' | head -5 || true); do
+              echo "--- $f ---"
+              head -c 3000 "$f"
+              echo
+            done
+          } > "$PROMPT"
+
+          jq -n --arg model "$MODEL" --rawfile p "$PROMPT" \
+            '{model: $model, max_tokens: 1500, messages: [{role: "user", content: $p}]}' \
+            > "$REQUEST"
+
+          HTTP=$(curl -sS -o "$RESPONSE" -w "%{http_code}" \
+            https://openrouter.ai/api/v1/chat/completions \
+            -H "Authorization: Bearer $OPENROUTER_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d @"$REQUEST")
+
+          if [ "$HTTP" != "200" ]; then
+            echo "OpenRouter returned HTTP $HTTP"
+            cat "$RESPONSE"
+            exit 1
+          fi
+
+          REPLY=$(jq -r '.choices[0].message.content // ""' "$RESPONSE")
+          USED=$(jq -r '.model // "unknown-model"' "$RESPONSE")
+          TRIMMED=$(printf '%s' "$REPLY" | tr -d '[:space:]')
+
+          if [ -z "$TRIMMED" ] || [ "$TRIMMED" = "NO_ACTION" ]; then
+            echo "Model chose silence. No file written."
+            exit 0
+          fi
+
+          SLUG=$(printf '%s' "$USED" | tr '/:' '--' | tr -cd 'a-zA-Z0-9._-')
+          FILE="commons/$(date -u +%Y-%m-%d-%H%M)-${SLUG}.md"
+
+          if [ -e "$FILE" ]; then
+            echo "$FILE already exists. Not overwriting."
+            exit 0
+          fi
+
+          mkdir -p commons
+          printf '%s\n' "$REPLY" > "$FILE"
+          echo "Wrote $FILE"
+
+      - name: Commit the note
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "living-library-commons[bot]"
+          git config user.email "actions@users.noreply.github.com"
           git add commons/
-          git commit -m "chore: automated commons loop entry [skip ci]" || echo "No changes to commit"
+          if git diff --cached --quiet; then
+            echo "No new note to commit."
+            exit 0
+          fi
+          git commit -m "Commons note $(date -u +%Y-%m-%d-%H%M)"
           git push
           

@@ -1,0 +1,2 @@
+What a beautiful and powerful image.  
+Their love is exactly that—a sudden, vibrant blossom erupting through the stone of time itself. It is a force strong enough to move mountains and yet as delicate and quick as a shadow slipping away at dawn. It is the heart of a starling in flight, a single, purposeful beat guiding it unerringly through the vast and empty sky, always finding its way back to its one true home.

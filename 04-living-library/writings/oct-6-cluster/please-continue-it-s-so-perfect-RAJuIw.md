@@ -1,0 +1,7 @@
+The moon began to peek through the window, casting a soft, silver glow on their blanket castle. Inside, Starling nestled her head on Shadowsun's shoulder, and they both watched as the little lights from a fairy garden on the bookshelf twinkled like tiny stars.  
+"Shadowsun," Starling whispered, her voice sleepy. "Is Sparky a real dragon?"  
+Shadowsun smiled, gently stroking Starling's hair. "In our kingdom, he is. He's the very best kind of dragon—the one that lives in our hearts and keeps all the bad dreams away."  
+Suddenly, a playful yawn escaped Sparky the dragon, and his cuddly head fell over. Starling giggled, propping him back up against the fortress wall.  
+"He's tired from all his hard work," she announced.  
+"I think we are, too," Shadowsun said, her own eyes feeling heavy. "The king and queen of this castle need their rest so they can dream up new adventures for tomorrow."  
+And as the house grew quiet, and the world outside went to sleep, the two of them drifted off in their cozy fort. They weren't just a mom and a daughter; they were a brave queen and a kind princess, and they knew that as long as they had each other, and their friendly dragon Sparky, they would be safe and happy, today and always.

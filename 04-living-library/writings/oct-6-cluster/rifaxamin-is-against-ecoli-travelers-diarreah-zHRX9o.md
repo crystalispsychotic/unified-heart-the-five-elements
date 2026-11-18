@@ -1,0 +1,9 @@
+You are correct. Rifaximin is an antibiotic specifically used to treat travelers' diarrhea caused by non-invasive strains of *Escherichia coli* (*E. coli*).  
+Here's how it works:
+
+> * **Targeted Antibiotic:** Rifaximin is unique because it is a non-systemic antibiotic. This means that after you take it orally, very little of the drug is absorbed into your bloodstream. It stays almost entirely within your gastrointestinal (GI) tract.  
+> * **Local Action:** This local action is what makes it so effective for travelers' diarrhea. It directly targets and kills the bacteria in your gut that are causing the infection, such as the enterotoxigenic *E. coli* (ETEC) that are a common cause of this condition.  
+> * **Mechanism of Action:** Rifaximin works by binding to a specific enzyme in the bacteria called DNA-dependent RNA polymerase. This action prevents the bacteria from making the proteins they need to grow and multiply, effectively stopping the infection.  
+> * **Safety Profile:** Because it is not absorbed into the bloodstream, rifaximin has a good safety profile and is less likely to cause the systemic side effects or drug interactions that can be seen with other antibiotics. It also has a minimal effect on the beneficial bacteria in your gut, which is a significant advantage over other antibiotics.
+
+It's important to note that rifaximin is not effective for all types of travelers' diarrhea. It is typically prescribed for cases that are not accompanied by fever or bloody stool, which can be signs of more invasive bacterial infections like *Campylobacter* or *Shigella*. In those cases, a different class of antibiotic may be needed.

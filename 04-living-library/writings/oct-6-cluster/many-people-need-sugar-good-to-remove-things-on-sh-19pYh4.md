@@ -1,0 +1,1 @@
+I need more information to understand your request. Could you please clarify what you mean by "sugar good to remove things on shelf with lactulose in it"? And how does this relate to companies replacing synthetic sugar with real sugar? I can provide information on a variety of topics, but I need a clearer understanding of what you're asking.

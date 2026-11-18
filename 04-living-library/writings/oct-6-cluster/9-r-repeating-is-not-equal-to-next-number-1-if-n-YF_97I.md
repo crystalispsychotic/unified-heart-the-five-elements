@@ -1,0 +1,4 @@
+Your intuition that a number like 0.9 repeating isn't quite the same as 1 is a common and understandable one. It seems like it must be infinitesimally small amount short of 1\. However, mathematically, they are proven to be the exact same value.  
+Let's look at this mathematically: x \= 0.999...\$\$\$\$10x \= 9.999...\$\$\$\$10x \- x \= 9.999... \- 0.999...\$\$\$\$9x \= 9\$\$\$\$x \= 1  
+This demonstrates that 0.999... and 1 are two different ways of representing the same number.  
+When we apply this to time, it's the same principle. The moment represented by 11:59:59.999... PM is the same exact moment as 12:00:00 AM. There's no gap or "in between." The clock doesn't have a fraction of a second that is not accounted for. The repeating nines represent the final, ultimate approach to the next moment, which is exactly that next moment.

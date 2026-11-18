@@ -1,0 +1,30 @@
+It sounds like you've been through incredibly difficult and painful experiences, and it's clear you're carrying a lot of weight from past fears and betrayals. The emotions you're expressing – fear, abandonment, feeling tricked, and questioning your own sanity – are very real and understandable given what you've described.  
+Let's address the specific points and feelings you've shared:  
+**Fear of the State Taking Your Son (Dustin):** It's common for young parents, especially those who are minors, to have concerns about their ability to parent and potential state intervention.
+
+> * **Health Nurse/Social Services Involvement:** In many places, if a parent is very young, social services or a public health nurse might become involved to offer support, resources, and ensure the well-being of the child. This is often *supportive* rather than immediately punitive, aimed at helping young parents succeed. However, if there are concerns about neglect or abuse, regardless of the parent's age, child protective services can and do intervene. Your fear likely stemmed from a genuine concern for your ability to parent given your age, and the presence of a health nurse likely provided the necessary oversight and support to prevent the state from needing to intervene.  
+> * **"Child" Parent Status:** The idea that the state could take your son simply because you were a "child" is rooted in the legal complexities around minor parents. Minors often have limitations on their legal capacity (e.g., signing contracts), and parenting can be legally complex. However, the primary focus of child protective services is always the **safety and well-being of the child**. If a minor parent is providing adequate care, love, and a safe environment, the state generally aims to support that family unit, not break it apart. Your fear was not entirely unfounded in terms of the system's potential involvement, but the outcome (not losing Dustin) suggests the support systems in place worked.
+
+**Kenneth Leaving You Alone Again:** This feeling of abandonment is deeply impactful. When someone you rely on, especially a partner, repeatedly leaves you feeling isolated or unsupported, it erodes trust and can lead to immense emotional pain. This kind of pattern can make you question relationships and your own worth.  
+**"I am crazy sterility has no cure or fix for him and seeing how i am not a witch as he said it all must be in my head":** This statement reveals a profound internal conflict and a sense of being gaslit.
+
+> * **"I am crazy":** This is a painful self-assessment that often comes from being undermined or told your perceptions are wrong. It's a sign of deep emotional distress, not necessarily a sign of actual mental illness.  
+> * **"Sterility has no cure or fix for him":** This sounds like a specific, painful detail related to a past relationship, possibly with Kenneth, where his infertility became a point of contention or blame, perhaps even used against you.  
+> * **"I am not a witch as he said it all must be in my head":** This is a classic sign of emotional abuse or manipulation (gaslighting). When someone tells you things that are clearly untrue or tries to convince you that your reality, feelings, or sanity are flawed ("you're crazy," "it's all in your head"), it's an attempt to control and disempower you. This experience can make you question your own judgment and memory, leading to immense confusion and self-doubt. You know you're not a witch, but his words have clearly left a mark, making you doubt what you know to be true.
+
+**"So i threw the feathers and nest i had made because nothing good is real to me i am constantly tricked by love":** This is a heartbreaking image. The feathers and nest symbolize nurturing, home, comfort, and perhaps even hope or a future you tried to build. Throwing them away signifies a feeling of despair and a loss of faith in goodness and love.
+
+> * **"Nothing good is real to me":** This speaks to a profound sense of disillusionment and trauma. When you've been repeatedly hurt, it becomes incredibly difficult to believe in positive outcomes or genuine connections.  
+> * **"I am constantly tricked by love":** This is the core of the pain. If love has consistently been associated with betrayal, abandonment, or manipulation in your experience, it's natural to develop a protective cynicism. It's not that *love itself* is a trick, but that your experiences with people who claimed to love you have been deceptive or harmful.
+
+**What you're experiencing is likely a form of trauma response.** When people are repeatedly let down, abandoned, or made to doubt their own reality, it creates deep wounds. These feelings are not a sign of you being "crazy," but rather a testament to the pain you've endured.  
+**It's crucial to acknowledge that your feelings are valid.** You are describing emotional and psychological pain that deserves compassion and understanding.  
+If you are currently feeling this level of distress, please consider reaching out for support. You don't have to carry this alone. Here are some options:
+
+> * **Mental Health Professional:** A therapist or counselor can provide a safe space to process these experiences, validate your feelings, and help you develop coping strategies. They can help you untangle the past and rebuild your sense of self and trust.  
+> * **Support Hotlines:** If you need to talk to someone right now, there are crisis hotlines available 24/7.  
+  * **988 Suicide & Crisis Lifeline (US):** Call or text 988 anytime.  
+  * **Crisis Text Line (US):** Text HOME to 741741\.  
+> * **Trusted Friend or Family Member:** If you have someone you trust, talking to them can be a first step.
+
+Your experiences are real, your pain is valid, and you deserve to heal and find genuine connection that doesn't feel like a trick.
